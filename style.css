@@ -1,0 +1,36 @@
+* {
+    background-color: rgba(17,17,17,255);
+    font-family: rockwell;
+    color: gray;
+}
+
+img.logo {
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    text-transform: uppercase;
+    font-weight: bold;
+    align-items: center;
+}
+
+a:hover {
+    color: whitesmoke!important;
+}
+
+a:active {
+    color: whitesmoke!important;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:link {
+    color: gray;
+}
+
+* {
+    text-decoration: none;
+}
