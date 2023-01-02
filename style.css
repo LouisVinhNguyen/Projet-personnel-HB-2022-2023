@@ -17,36 +17,38 @@
     height: auto;
     height: fit-content;
     background: #153243;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    float: right;
 }
 
 .logo img {
-    height: 55px;
+    height: 40px;
     float: left;
     padding: 10px;
     vertical-align: middle;
 }
 
-nav ul {
-    float: right;
-    padding: 10px;
-}
 
 nav ul li{
     display: inline-block;
     list-style: none;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 50px;
-    padding-inline: 5px;
+    font-size: 30px;
+    padding: 7px;
 }
 
 nav ul li a{
     background: #eef0eb;
     border: solid 1px #eef0eb;
     border-radius: 10px;
-    margin: 5px;
-    padding: 5px;
+    padding: 3px;
     color: #284b63;
+    vertical-align: middle;
 }
 
 nav ul li a:hover {
@@ -54,28 +56,32 @@ nav ul li a:hover {
     background: #153243;
 }
 
-.main p {
-    text-align: center;
-}
-
 .main {
+    position: absolute;
+    top: 55px;
+    bottom: 60px;
+    width: 100%;
     background: #284b63;
     padding: 10px;
     font-size: 30px;
     font-weight: bold;
 }
 
+.main p {
+    text-align: center;
+}
+
 .footer {
+    position: fixed;
+    bottom: 0;
     background: #153243;
     width: 100%;
     padding: 10px;
-    font-size: 30px;
-    font-weight: bold;
     text-align: center;
 }
 
 .footer_links img{
-    height: 20px;
+    height: 25px;
     width: auto;
 }
 
