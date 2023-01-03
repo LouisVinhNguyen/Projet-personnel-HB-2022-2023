@@ -15,10 +15,14 @@
 .header {
     width: 100%;
     height: auto;
-    height: fit-content;
     background: #153243;
     position: sticky;
     top: 0;
+}
+
+nav {
+    width: 80%;
+    margin-inline: 10%;
 }
 
 nav ul {
@@ -28,7 +32,7 @@ nav ul {
 .logo img {
     height: 40px;
     float: left;
-    padding: 10px;
+    padding: 7px;
     vertical-align: middle;
 }
 
@@ -58,17 +62,23 @@ nav ul li a:hover {
 
 .main {
     position: absolute;
-    top: 55px;
+    top: 53px;
     bottom: 60px;
     width: 100%;
     background: #284b63;
-    padding: 10px;
     font-size: 30px;
     font-weight: bold;
 }
 
-.main p {
+.text {
     text-align: center;
+    padding: 20px 0;
+}
+
+.intro {
+    font-weight: bold;
+    font-size: 50px;
+    padding-bottom: 30px;
 }
 
 .footer {
