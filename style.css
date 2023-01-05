@@ -39,7 +39,6 @@ nav ul {
 nav ul li{
     display: inline-block;
     list-style: none;
-    text-transform: uppercase;
     font-weight: bold;
     font-size: 30px;
     padding-top: 10px;
@@ -48,16 +47,14 @@ nav ul li{
 }
 
 nav ul li a{
-    background: #eef0eb;
-    border: solid 1px #eef0eb;
-    border-radius: 10px;
-    color: #284b63;
-    padding: 3px;
+    color: #eef0eb;
+    padding: 4px;
+    padding-inline: 7px;
 }
 
 nav ul li a:hover {
-    color: #eef0eb;
-    background: #153243;
+    text-decoration: underline;
+    text-decoration-color: #D19C1D;
 }
 
 .main {
@@ -93,10 +90,17 @@ p {
     font-size: 30px;
     padding: 7px;
     background: #D19C1D;
-    border-radius: 3px;
+    border-radius: 2px;
     position: relative; left: 10px;
 }
 
+.text a{
+    color: #D19C1D;
+}
+
+.text a:hover{
+    color: #be8c16;
+}
 
 .footer {
     position: fixed;
