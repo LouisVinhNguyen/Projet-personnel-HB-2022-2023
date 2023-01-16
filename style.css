@@ -102,6 +102,10 @@ p {
     color: #be8c16;
 }
 
+.projets_img {
+    border: 5px solid #eef0eb;
+}
+
 .footer {
     position: fixed;
     bottom: 0;
