@@ -92,7 +92,7 @@ nav ul li a:hover {
 
 .text {
     text-align: left;
-    min-width: 40vw;
+    width: 40vw;
     margin: 10% 30%;
 }
 
@@ -147,9 +147,8 @@ padding-inline: 5px;
 
 .projets_img {
     border: 5px solid #eef0eb;
-    height: 30vw;
-    max-height: 300px;
-    width: auto;
+    height: auto;
+    width: 40vh;
 }
 
 .cs50x {
@@ -161,8 +160,8 @@ padding-inline: 5px;
     bottom: 0;
     background: #153243;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: min(1vh, 10px);
+    padding-bottom: min(1vh, 10px);
     text-align: center;
     z-index: 2;
 }
@@ -196,6 +195,11 @@ padding-inline: 5px;
         min-width: 60vw;
         margin: 15% 20%;
     }
+
+    .projets_img {
+        height: auto;
+        width: 35vh;
+    }
   }
 
 @media screen and (max-width: 1100px) {
@@ -226,6 +230,11 @@ padding-inline: 5px;
     nav ul li a{
         padding-inline: 4px;
     }
+
+    .projets_img {
+        height: auto;
+        width: 30vh;
+    }
   }
 
 @media screen and (max-width: 800px) {
@@ -242,5 +251,137 @@ padding-inline: 5px;
     .text {
         min-width: 70vw;
         margin: 25% 15%;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .header {
+        height: 50px;
+    }
+
+    nav {
+        width: 90%;
+        margin-inline: 5%;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+  }
+
+@media screen and (max-width: 500px) {
+    .header {
+        height: 40px;
+    }
+
+    nav {
+        width: 94%;
+        margin-inline: 3%;
+    }
+
+    nav ul li{
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 11px;
+        padding-inline: 1px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    nav ul li a{
+        padding-inline: 1x;
+    }
+
+    .text {
+        min-width: 84vw;
+        margin: 20% 8%;
+    }
+
+    .titre {
+        font-size: 30px;
+    }
+    
+    .titrecontact {
+        font-size: 25px;
+    }
+    
+    .soustitre {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .comp li{
+        font-size: 20px;
+        padding: 4px;
+        border-radius: 2px;
+        margin-bottom: 5px;
+    }
+
+    .projets_img {
+        width: 35vh;
+    }
+  }
+
+@media screen and (max-width: 400px) {
+    .header {
+        height: 40px;
+    }
+
+    nav {
+        width: 96%;
+        margin-inline: 2%;
+    }
+
+    nav ul li{
+        font-size: 17px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-inline: 1px;
+    }
+
+    .logo img {
+        height: 25px;
+    }
+
+    nav ul li a{
+        padding-inline: 1x;
+    }
+
+    .text {
+        min-width: 88vw;
+        margin: 20% 6%;
+    }
+
+    .titre {
+        font-size: 30px;
+    }
+    
+    .titrecontact {
+        font-size: 25px;
+    }
+    
+    .soustitre {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .comp li{
+        font-size: 20px;
+        padding: 4px;
+        border-radius: 2px;
+        margin-bottom: 5px;
+    }
+
+    .projets_img {
+        width: 45vh;
     }
   }
