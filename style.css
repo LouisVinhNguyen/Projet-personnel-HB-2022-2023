@@ -29,7 +29,7 @@
 .container {
     display: grid;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .header {
@@ -44,16 +44,17 @@
 nav {
     width: 80%;
     margin-inline: 10%;
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
     float: right;
+    margin-left: auto;
 }
 
 .logo img {
     height: 41px;
-    float: left;
-    padding: 7px;
 }
 
 
@@ -69,7 +70,6 @@ nav ul li{
 
 nav ul li a{
     color: #eef0eb;
-    padding: 4px;
     padding-inline: 7px;
 }
 
@@ -81,16 +81,19 @@ nav ul li a:hover {
 .main {
     position: static;
     width: 100%;
-    min-height: 93vh;
+    min-height: 95vh;
     background: #284b63;
     font-size: 30px;
     font-weight: bold;
     z-index: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .text {
     text-align: left;
-    padding: 10% 30%;
+    min-width: 40vw;
+    margin: 10% 30%;
 }
 
 p {
@@ -111,6 +114,7 @@ padding-inline: 5px;
     background: #D19C1D;
     border-radius: 2px;
     position: relative; left: 10px;
+    margin-bottom: 7px;
 }
 
 .text a{
@@ -138,22 +142,13 @@ padding-inline: 5px;
 .soustitre {
     font-weight: bold;
     font-size: 30px;
-}
-
-.column {
-    float: left;
-    width: 50%;
-    }
-
-.row:after {
-content: "";
-display: table;
-clear: both;
+    justify-content: center;
 }
 
 .projets_img {
     border: 5px solid #eef0eb;
-    height: 300px;
+    height: 30vw;
+    max-height: 300px;
     width: auto;
 }
 
@@ -181,3 +176,71 @@ clear: both;
     font-size: 10px;
     color: #284b63;
 }
+
+@media screen and (max-width: 1800px) {
+    .text {
+        min-width: 50vw;
+        margin: 15% 25%;
+    }
+  }
+
+@media screen and (max-width: 1500px) {
+    .text {
+        min-width: 54vw;
+        margin: 15% 23%;
+    }
+  }
+
+@media screen and (max-width: 1300px) {
+    .text {
+        min-width: 60vw;
+        margin: 15% 20%;
+    }
+  }
+
+@media screen and (max-width: 1100px) {
+    .text {
+        min-width: 60vw;
+        margin: 20% 20%;
+    }
+  }
+
+@media screen and (max-width: 1000px) {
+    .main {
+        font-size: 25px;
+    }
+
+    .titre {
+        font-size: 50px;
+    }
+    
+    .titrecontact {
+        font-weight: bold;
+        font-size: 42px;
+        text-decoration: underline;
+        text-decoration-color: #D19C1D
+    }
+  }
+
+@media screen and (max-width: 900px) {
+    nav ul li a{
+        padding-inline: 4px;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+    nav ul li{
+        padding-top: 10px;
+        padding-bottom: 11px;
+        padding-inline: 2px;
+    }
+
+    nav ul li a{
+        padding-inline: 2px;
+    }
+
+    .text {
+        min-width: 70vw;
+        margin: 25% 15%;
+    }
+  }
